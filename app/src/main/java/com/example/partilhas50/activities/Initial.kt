@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 
-private val TAG = Initial::javaClass::name.get()
+private val TAG = Initial::class.qualifiedName
 
 class Initial : AppCompatActivity() {
 
@@ -23,6 +23,6 @@ class Initial : AppCompatActivity() {
 
 
     fun isSetupDone(): Boolean {
-        return true
+        return false
     }
 }
